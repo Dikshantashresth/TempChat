@@ -18,7 +18,7 @@ const Leave = () => {
           params: { userId: id },
         }
       );
-      console.log(memberLeft.data);
+
       if (memberLeft.data.status === true || false) {
         setWarning(memberLeft.data.message);
         navigate(`/dashboard/${username}`);

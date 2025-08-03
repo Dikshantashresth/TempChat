@@ -13,7 +13,7 @@ const Rooms = () => {
       try {
         const rooms = await axios.get(`https://serverchat-p6jr.onrender.com/rooms/${id}`);
         setRooms(rooms.data);
-        console.log(rooms.data);
+     
       } catch (err) {
         console.log(err.message);
       }

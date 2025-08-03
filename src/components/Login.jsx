@@ -24,7 +24,7 @@ const Login = () => {
       if (data) {
         setLoggedInUsername(username);
         setId(data.id);
-        console.log(data);
+    
         navigate(`/dashboard/${username}`);
       }
     } catch (err) {

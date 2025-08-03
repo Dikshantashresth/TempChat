@@ -17,7 +17,7 @@ const Join = () => {
     try {
       socket.on("roomjoined", (message) => {
         if (message.status) {
-          console.log(message)
+        
           localStorage.setItem("roomId", message.roomId);
           setTimeout(()=>{
              navigate("/chat");
@@ -26,7 +26,7 @@ const Join = () => {
         }
       });
     } catch (err) {
-      console.log(err.message);
+      
     }
   }, [navigate]);
 
@@ -39,7 +39,7 @@ const Join = () => {
       password: Password,
       userid: id,
     };
-    console.log(roomData)
+
     socket.emit("join_room", roomData);
   };
   return (

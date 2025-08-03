@@ -27,8 +27,7 @@ export function UserProvider({ children }) {
             navigate(`/dashboard/${username}`);
           }
         }
-        console.log(roomid);
-        console.log("PROFILE DATA:", res.data);
+        
       })
       .catch((err) => {
         console.log("Not logged in", err.message);

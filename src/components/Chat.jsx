@@ -46,13 +46,13 @@ if (id && storedRoomId) {
     const messageHandler = (message) => {
       setChat((prev) => [...prev, message]);
       setMessage("");
-      console.log(message);
+      
     };
     //getmessage
     socket.on("get_message", messageHandler);
    
     socket.on("members", (updatedRoom) => {
-      console.log(updatedRoom);
+     
       setMembers(updatedRoom.members);
     });
     return () => {
