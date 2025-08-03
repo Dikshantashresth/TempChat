@@ -18,7 +18,7 @@ export function UserProvider({ children }) {
     location.pathname === "/register";
   useEffect(() => {
     axios
-      .get("http://localhost:4000/profile", { withCredentials: true })
+      .get("https://serverchat-p6jr.onrender.com/profile", { withCredentials: true })
       .then((res) => {
         if (res.data) {
           setUsername(res.data.username);

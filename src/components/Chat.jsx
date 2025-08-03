@@ -20,7 +20,7 @@ const Chat = () => {
     if (!socket.connected) socket.connect();
 
     axios
-      .get("http://localhost:4000/messages", {
+      .get("https://serverchat-p6jr.onrender.com/messages", {
         params: { roomId: storedRoomId },
       })
       .then((res) => setChat(res.data))

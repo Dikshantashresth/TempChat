@@ -17,7 +17,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:4000/login", {
+      const { data } = await axios.post("https://serverchat-p6jr.onrender.com/login", {
         username,
         password,
       });

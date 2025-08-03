@@ -12,7 +12,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { data } = await axios.post("http://localhost:4000/register", {
+    const { data } = await axios.post("https://serverchat-p6jr.onrender.com/register", {
       username,
       password,
     });

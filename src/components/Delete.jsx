@@ -11,7 +11,7 @@ const Delete = () => {
   useEffect(() => {
     const remove = async () => {
       const deleted = await axios.delete(
-        `http://localhost:4000/delete/${roomid}`
+        `https://serverchat-p6jr.onrender.com/delete/${roomid}`
       );
       console.log(deleted);
       if (deleted.status === false || true) {

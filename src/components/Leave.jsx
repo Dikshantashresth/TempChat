@@ -13,7 +13,7 @@ const Leave = () => {
   useEffect(() => {
     const leave = async () => {
       const memberLeft = await axios.get(
-        `http://localhost:4000/leave/${roomid}`,
+        `https://serverchat-p6jr.onrender.com/leave/${roomid}`,
         {
           params: { userId: id },
         }
